@@ -9,7 +9,6 @@
 #import <ATBase/NSObject+Reflection.h>
 #import <ATBase/NSValue+Helpers.h>
 
-#import "ATAnimator.h"
 #import "ATAnimation_Subclass.h"
 #import "ATInterpolators.h"
 
