@@ -16,6 +16,9 @@
 		6BFAEABA1877640E001CE3A9 /* ATAnimationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA9D1877640E001CE3A9 /* ATAnimationKit.framework */; };
 		6BFAEAC01877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEABE1877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAC21877640E001CE3A9 /* ATAnimationKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAC11877640E001CE3A9 /* ATAnimationKitTests.m */; };
+		6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */; };
+		6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */; };
+		6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		6BFAEABF1877640E001CE3A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6BFAEAC11877640E001CE3A9 /* ATAnimationKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAnimationKitTests.m; sourceTree = "<group>"; };
 		6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ATBase.xcodeproj; path = ../ATBase/ATBase.xcodeproj; sourceTree = "<group>"; };
+		6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDisplayLink.h; sourceTree = "<group>"; };
+		6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDisplayLink.m; sourceTree = "<group>"; };
+		6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			files = (
 				6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */,
 				6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */,
+				6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +123,7 @@
 				6BFAEAA21877640E001CE3A9 /* Other Frameworks */,
 				6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */,
 				6BFAEAA01877640E001CE3A9 /* Cocoa.framework */,
+				6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */,
 				6BFAEAB51877640E001CE3A9 /* XCTest.framework */,
 			);
 			name = Frameworks;
@@ -134,6 +142,7 @@
 		6BFAEAA61877640E001CE3A9 /* ATAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAEAE718776C11001CE3A9 /* Display Link */,
 				6BFAEAA71877640E001CE3A9 /* Supporting Files */,
 				6BFAEAAD1877640E001CE3A9 /* ATAnimationKit.h */,
 				6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */,
@@ -178,6 +187,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6BFAEAE718776C11001CE3A9 /* Display Link */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */,
+				6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */,
+			);
+			name = "Display Link";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -185,6 +203,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */,
+				6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
