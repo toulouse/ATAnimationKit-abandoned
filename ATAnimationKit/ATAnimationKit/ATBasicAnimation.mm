@@ -15,7 +15,7 @@
 #import "ATAnimation_Subclass.h"
 #import "ATPropertyAnimation.h"
 #import "ATPropertyAnimation_Internal.hpp"
-#import "ATPropertyAnimationStrategy.hpp"
+#import "ATBasicAnimationStrategy.hpp"
 
 @interface ATBasicAnimation ()
 
