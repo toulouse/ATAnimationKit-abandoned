@@ -51,6 +51,11 @@
 {
     ATAssert(_running, @"Shouldn't be ticking while not running");
     if (_running) {
+        if ([self shouldStopAtTime:time]) {
+            // Bail from applying animation if we should be stopped
+            return;
+        }
+
         _lastFrameTime = time;
         
         [self applyAnimationAtTime:time];
