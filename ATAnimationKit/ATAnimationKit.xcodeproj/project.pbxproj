@@ -23,6 +23,14 @@
 		6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */; };
 		6BFAEAF518776D90001CE3A9 /* ATInterpolator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAF318776D90001CE3A9 /* ATInterpolator.hpp */; };
 		6BFAEAF618776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAF418776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp */; };
+		6BFAEB0418776F73001CE3A9 /* ATAnimation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFC18776F73001CE3A9 /* ATAnimation_Internal.h */; };
+		6BFAEB0518776F73001CE3A9 /* ATAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFD18776F73001CE3A9 /* ATAnimation.h */; };
+		6BFAEB0618776F73001CE3A9 /* ATAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAFE18776F73001CE3A9 /* ATAnimation.m */; };
+		6BFAEB0718776F73001CE3A9 /* ATAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFF18776F73001CE3A9 /* ATAnimator.h */; };
+		6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEB0018776F73001CE3A9 /* ATAnimator.m */; };
+		6BFAEB0918776F73001CE3A9 /* ATPropertyAnimation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.h */; };
+		6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */; };
+		6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +88,14 @@
 		6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEasingFunctions.h; sourceTree = "<group>"; };
 		6BFAEAF318776D90001CE3A9 /* ATInterpolator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ATInterpolator.hpp; sourceTree = "<group>"; };
 		6BFAEAF418776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "ATInterpolator+CoreGraphics.hpp"; sourceTree = "<group>"; };
+		6BFAEAFC18776F73001CE3A9 /* ATAnimation_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimation_Internal.h; sourceTree = "<group>"; };
+		6BFAEAFD18776F73001CE3A9 /* ATAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimation.h; sourceTree = "<group>"; };
+		6BFAEAFE18776F73001CE3A9 /* ATAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimation.m; sourceTree = "<group>"; };
+		6BFAEAFF18776F73001CE3A9 /* ATAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimator.h; sourceTree = "<group>"; };
+		6BFAEB0018776F73001CE3A9 /* ATAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimator.m; sourceTree = "<group>"; };
+		6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPropertyAnimation_Internal.h; sourceTree = "<group>"; };
+		6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPropertyAnimation.h; sourceTree = "<group>"; };
+		6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATPropertyAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +166,7 @@
 		6BFAEAA61877640E001CE3A9 /* ATAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAEAF918776F45001CE3A9 /* Animations */,
 				6BFAEAE718776C11001CE3A9 /* Display Link */,
 				6BFAEAEA18776C36001CE3A9 /* Math */,
 				6BFAEAA71877640E001CE3A9 /* Supporting Files */,
@@ -216,6 +233,21 @@
 			name = Math;
 			sourceTree = "<group>";
 		};
+		6BFAEAF918776F45001CE3A9 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAEAFD18776F73001CE3A9 /* ATAnimation.h */,
+				6BFAEAFE18776F73001CE3A9 /* ATAnimation.m */,
+				6BFAEAFC18776F73001CE3A9 /* ATAnimation_Internal.h */,
+				6BFAEAFF18776F73001CE3A9 /* ATAnimator.h */,
+				6BFAEB0018776F73001CE3A9 /* ATAnimator.m */,
+				6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */,
+				6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.m */,
+				6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.h */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -223,10 +255,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFAEB0518776F73001CE3A9 /* ATAnimation.h in Headers */,
+				6BFAEB0418776F73001CE3A9 /* ATAnimation_Internal.h in Headers */,
+				6BFAEB0718776F73001CE3A9 /* ATAnimator.h in Headers */,
 				6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */,
 				6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */,
 				6BFAEAF618776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp in Headers */,
 				6BFAEAF518776D90001CE3A9 /* ATInterpolator.hpp in Headers */,
+				6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */,
+				6BFAEB0918776F73001CE3A9 /* ATPropertyAnimation_Internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFAEB0618776F73001CE3A9 /* ATAnimation.m in Sources */,
 				6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */,
+				6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */,
 				6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */,
 				6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */,
+				6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
