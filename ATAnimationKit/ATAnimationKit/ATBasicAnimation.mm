@@ -20,7 +20,7 @@
 @interface ATBasicAnimation ()
 
 @property (nonatomic, assign) float percent;
-@property (nonatomic, copy, readwrite) id currentValue;
+
 @end
 
 @implementation ATBasicAnimation
