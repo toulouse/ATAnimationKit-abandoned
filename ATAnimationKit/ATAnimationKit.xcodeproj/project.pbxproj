@@ -10,7 +10,7 @@
 		6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4371877AB95003BE36F /* ATGeometry.c */; };
 		6B08F43A1877AB95003BE36F /* ATGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4381877AB95003BE36F /* ATGeometry.h */; };
 		6B08F4561877B1B1003BE36F /* ATAnimation_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4521877B1B1003BE36F /* ATAnimation_Subclass.h */; };
-		6B08F4571877B1B1003BE36F /* ATBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4531877B1B1003BE36F /* ATBasicAnimation.h */; };
+		6B08F4571877B1B1003BE36F /* ATBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4531877B1B1003BE36F /* ATBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B08F4581877B1B1003BE36F /* ATBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4541877B1B1003BE36F /* ATBasicAnimation.mm */; };
 		6B0AF6F91877DE3000124DA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF6F81877DE3000124DA6 /* QuartzCore.framework */; };
 		6B0AF6FF1877DF1100124DA6 /* ATArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF6FD1877DF1100124DA6 /* ATArithmetic.c */; };
@@ -22,6 +22,7 @@
 		6B0AF7161877E45900124DA6 /* ATBasicAnimationStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF7141877E45900124DA6 /* ATBasicAnimationStrategy.cpp */; };
 		6B0AF7171877E45900124DA6 /* ATBasicAnimationStrategy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AF7151877E45900124DA6 /* ATBasicAnimationStrategy.hpp */; };
 		6B0AF76A1877E7BA00124DA6 /* ATBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF7691877E7BA00124DA6 /* ATBase.framework */; };
+		6B0AF76B1877EE0F00124DA6 /* ATAnimationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAAD1877640E001CE3A9 /* ATAnimationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAA01877640E001CE3A9 /* Cocoa.framework */; };
 		6BFAEAAB1877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEAA91877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */; };
@@ -30,18 +31,18 @@
 		6BFAEABA1877640E001CE3A9 /* ATAnimationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA9D1877640E001CE3A9 /* ATAnimationKit.framework */; };
 		6BFAEAC01877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEABE1877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAC21877640E001CE3A9 /* ATAnimationKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAC11877640E001CE3A9 /* ATAnimationKitTests.m */; };
-		6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */; };
+		6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */; };
 		6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */; };
 		6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */; };
-		6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */; };
+		6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEB0418776F73001CE3A9 /* ATAnimation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFC18776F73001CE3A9 /* ATAnimation_Internal.h */; };
-		6BFAEB0518776F73001CE3A9 /* ATAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFD18776F73001CE3A9 /* ATAnimation.h */; };
+		6BFAEB0518776F73001CE3A9 /* ATAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFD18776F73001CE3A9 /* ATAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEB0618776F73001CE3A9 /* ATAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAFE18776F73001CE3A9 /* ATAnimation.m */; };
-		6BFAEB0718776F73001CE3A9 /* ATAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFF18776F73001CE3A9 /* ATAnimator.h */; };
+		6BFAEB0718776F73001CE3A9 /* ATAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAFF18776F73001CE3A9 /* ATAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEB0018776F73001CE3A9 /* ATAnimator.m */; };
 		6BFAEB0918776F73001CE3A9 /* ATPropertyAnimation_Internal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.hpp */; };
-		6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */; };
+		6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +263,7 @@
 				6BFAEB0518776F73001CE3A9 /* ATAnimation.h in Headers */,
 				6BFAEB0418776F73001CE3A9 /* ATAnimation_Internal.h in Headers */,
 				6B08F4561877B1B1003BE36F /* ATAnimation_Subclass.h in Headers */,
+				6B0AF76B1877EE0F00124DA6 /* ATAnimationKit.h in Headers */,
 				6BFAEB0718776F73001CE3A9 /* ATAnimator.h in Headers */,
 				6B0AF7001877DF1100124DA6 /* ATArithmetic.h in Headers */,
 				6B08F4571877B1B1003BE36F /* ATBasicAnimation.h in Headers */,

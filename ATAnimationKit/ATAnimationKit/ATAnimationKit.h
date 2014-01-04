@@ -5,6 +5,9 @@
 
 #include <ATAnimationKit/ATEasingFunctions.h>
 
+#import <ATAnimationKit/ATAnimator.h>
+#import <ATAnimationKit/ATAnimation.h>
+#import <ATAnimationKit/ATBasicAnimation.h>
 #import <ATAnimationKit/ATDisplayLink.h>
 
 #endif /* ATANIMATIONKIT_H_ */
