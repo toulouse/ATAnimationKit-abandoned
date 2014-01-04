@@ -70,7 +70,10 @@ static void ATDisplayLinkDisplay(void *displayLinkContext);
         } else {
             dispatch_async(_startStopQueue, ^{
                 // Retain self while display link is running.
+#ifndef __clang_analyzer__
+                // Intentional; released later
                 CFBridgingRetain(self);
+#endif
                 CVDisplayLinkStart(_displayLink);
             });
         }
