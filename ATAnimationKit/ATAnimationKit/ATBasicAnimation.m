@@ -13,6 +13,8 @@
 
 - (void)applyAnimationAtTime:(CFTimeInterval)time
 {
+    [super applyAnimationAtTime:time];
+    
     if ([self shouldStopAtTime:time]) {
         return;
     }

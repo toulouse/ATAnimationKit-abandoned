@@ -61,12 +61,20 @@
     }
 }
 
-#pragma mark -
+#pragma mark - Subclass methods
 
 - (void)animatorDidAddAnimation:(ATAnimator *)animator
 {
     [super animatorDidAddAnimation:animator];
     [self updateEncodedTypeIfNeeded];
+}
+
+- (void)startAnimationAtTime:(CFTimeInterval)time
+{
+    [super startAnimationAtTime:time];
+    if (!_fromValue) {
+        _fromValue = [_object valueForKeyPath:_keyPath];
+    }
 }
 
 #pragma mark -

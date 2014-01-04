@@ -13,6 +13,8 @@
 
 - (BOOL)shouldStopAtTime:(CFTimeInterval)time;
 
+- (void)startAnimationAtTime:(CFTimeInterval)time;
+
 - (void)applyAnimationAtTime:(CFTimeInterval)time;
 
 @end

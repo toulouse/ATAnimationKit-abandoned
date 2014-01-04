@@ -40,7 +40,7 @@
     _shouldStart = NO;
     _running = YES;
     
-    [self startWithAnimator:animator atTime:time];
+    [self startAnimationAtTime:time];
     
     if ([_delegate respondsToSelector:@selector(animationDidStart:)]) {
         [_delegate animationDidStart:self];
@@ -74,15 +74,11 @@
 {
 }
 
-- (void)startWithAnimator:(ATAnimator *)animator atTime:(CFTimeInterval)time
+- (void)startAnimationAtTime:(CFTimeInterval)time
 {
 }
 
 - (void)applyAnimationAtTime:(CFTimeInterval)time
-{
-}
-
-- (void)stopWithAnimator:(ATAnimator *)animator finished:(BOOL)finished
 {
 }
 
