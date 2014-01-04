@@ -43,18 +43,23 @@
 
 - (void)setPercent:(float)percent
 {
-    if (_percent == percent) {
+    AT::Animation::BasicPropertyStrategy *strategy = static_cast<AT::Animation::BasicPropertyStrategy*>(self.propertyStrategy);
+
+    if (strategy->getPercent() == percent) {
         return;
     }
 
-    _percent = percent;
-
-    AT::Animation::BasicPropertyStrategy *strategy = static_cast<AT::Animation::BasicPropertyStrategy*>(self.propertyStrategy);
     strategy->setPercent(percent);
-
-
     [self.object setValue:self.currentValue forKeyPath:self.keyPath];
 }
+
+- (float)percent
+{
+    AT::Animation::BasicPropertyStrategy *strategy = static_cast<AT::Animation::BasicPropertyStrategy*>(self.propertyStrategy);
+    return strategy->getPercent();
+}
+
+#pragma mark - Property Strategy factory (barf) method
 
 + (AT::Animation::PropertyStrategy *)newPropertyStrategyForType:(NSString *)encodedType
 {

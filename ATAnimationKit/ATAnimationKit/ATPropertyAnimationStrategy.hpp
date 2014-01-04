@@ -38,6 +38,7 @@ namespace AT {
         class BasicPropertyStrategy : public PropertyStrategy {
         public:
             virtual void setPercent(float percent) {};
+            virtual float getPercent() { return 0; };
         };
 
         template <class Derived, typename T>
@@ -53,6 +54,10 @@ namespace AT {
                 _percent = percent;
 
                 this->_currentValue = static_cast<Derived *>(this)->interpolate(this->_fromValue, this->_toValue, this->_percent);
+            }
+
+            float getPercent() {
+                return _percent;
             }
         };
 
