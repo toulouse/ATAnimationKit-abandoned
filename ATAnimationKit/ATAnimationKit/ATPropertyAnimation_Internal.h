@@ -2,10 +2,12 @@
 
 #import "ATPropertyAnimation.h"
 
+
 @interface ATPropertyAnimation () {
-    NSString *_encodedType;
     BOOL _needsEncodedTypeUpdate;
 }
+
+@property (nonatomic, copy, readonly) NSString *encodedType;
 
 - (void)setNeedsEncodedTypeUpdate;
 - (void)updateEncodedTypeIfNeeded;

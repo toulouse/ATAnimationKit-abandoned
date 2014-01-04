@@ -7,4 +7,6 @@
 
 @property (nonatomic, assign) float percent;
 
+- (NSString *)encodedType;
+
 @end
