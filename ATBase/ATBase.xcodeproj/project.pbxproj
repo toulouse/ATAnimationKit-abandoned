@@ -40,6 +40,8 @@
 		6BFAEA8A18776205001CE3A9 /* NSArray+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEA8818776205001CE3A9 /* NSArray+Helpers.m */; };
 		6BFAEA8D1877629D001CE3A9 /* NSObject+Reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEA8B1877629D001CE3A9 /* NSObject+Reflection.h */; };
 		6BFAEA8E1877629D001CE3A9 /* NSObject+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEA8C1877629D001CE3A9 /* NSObject+Reflection.m */; };
+		6BFAEA9118776345001CE3A9 /* NSValue+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEA8F18776345001CE3A9 /* NSValue+Helpers.h */; };
+		6BFAEA9218776345001CE3A9 /* NSValue+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEA9018776345001CE3A9 /* NSValue+Helpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		6BFAEA8818776205001CE3A9 /* NSArray+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Helpers.m"; sourceTree = "<group>"; };
 		6BFAEA8B1877629D001CE3A9 /* NSObject+Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Reflection.h"; sourceTree = "<group>"; };
 		6BFAEA8C1877629D001CE3A9 /* NSObject+Reflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Reflection.m"; sourceTree = "<group>"; };
+		6BFAEA8F18776345001CE3A9 /* NSValue+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Helpers.h"; sourceTree = "<group>"; };
+		6BFAEA9018776345001CE3A9 /* NSValue+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+Helpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				6BFAEA8818776205001CE3A9 /* NSArray+Helpers.m */,
 				6BFAEA8B1877629D001CE3A9 /* NSObject+Reflection.h */,
 				6BFAEA8C1877629D001CE3A9 /* NSObject+Reflection.m */,
+				6BFAEA8F18776345001CE3A9 /* NSValue+Helpers.h */,
+				6BFAEA9018776345001CE3A9 /* NSValue+Helpers.m */,
 			);
 			path = ATBase;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 				6BFAEA7218775E36001CE3A9 /* DDTTYLogger.h in Headers */,
 				6BFAEA8918776205001CE3A9 /* NSArray+Helpers.h in Headers */,
 				6BFAEA8D1877629D001CE3A9 /* NSObject+Reflection.h in Headers */,
+				6BFAEA9118776345001CE3A9 /* NSValue+Helpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +382,7 @@
 				6BFAEA7318775E36001CE3A9 /* DDTTYLogger.m in Sources */,
 				6BFAEA8A18776205001CE3A9 /* NSArray+Helpers.m in Sources */,
 				6BFAEA8E1877629D001CE3A9 /* NSObject+Reflection.m in Sources */,
+				6BFAEA9218776345001CE3A9 /* NSValue+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
