@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0AF7041877DFAA00124DA6 /* NSNumber+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */; };
+		6B0AF7051877DFAA00124DA6 /* NSNumber+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */; };
 		6BFAEA0E187754C9001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA0D187754C9001CE3A9 /* Cocoa.framework */; };
 		6BFAEA18187754C9001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEA16187754C9001CE3A9 /* InfoPlist.strings */; };
 		6BFAEA23187754C9001CE3A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA22187754C9001CE3A9 /* XCTest.framework */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Helpers.h"; sourceTree = "<group>"; };
+		6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Helpers.m"; sourceTree = "<group>"; };
 		6BFAEA0A187754C8001CE3A9 /* ATBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEA0D187754C9001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BFAEA10187754C9001CE3A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +176,8 @@
 				6BFAEA5218775CDE001CE3A9 /* ATLog.h */,
 				6BFAEA8718776205001CE3A9 /* NSArray+Helpers.h */,
 				6BFAEA8818776205001CE3A9 /* NSArray+Helpers.m */,
+				6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */,
+				6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */,
 				6BFAEA8B1877629D001CE3A9 /* NSObject+Reflection.h */,
 				6BFAEA8C1877629D001CE3A9 /* NSObject+Reflection.m */,
 				6BFAEA8F18776345001CE3A9 /* NSValue+Helpers.h */,
@@ -270,6 +276,7 @@
 				6BFAEA7818775E36001CE3A9 /* DDMultiFormatter.h in Headers */,
 				6BFAEA7218775E36001CE3A9 /* DDTTYLogger.h in Headers */,
 				6BFAEA8918776205001CE3A9 /* NSArray+Helpers.h in Headers */,
+				6B0AF7041877DFAA00124DA6 /* NSNumber+Helpers.h in Headers */,
 				6BFAEA8D1877629D001CE3A9 /* NSObject+Reflection.h in Headers */,
 				6BFAEA9118776345001CE3A9 /* NSValue+Helpers.h in Headers */,
 			);
@@ -381,6 +388,7 @@
 				6BFAEA7918775E36001CE3A9 /* DDMultiFormatter.m in Sources */,
 				6BFAEA7318775E36001CE3A9 /* DDTTYLogger.m in Sources */,
 				6BFAEA8A18776205001CE3A9 /* NSArray+Helpers.m in Sources */,
+				6B0AF7051877DFAA00124DA6 /* NSNumber+Helpers.m in Sources */,
 				6BFAEA8E1877629D001CE3A9 /* NSObject+Reflection.m in Sources */,
 				6BFAEA9218776345001CE3A9 /* NSValue+Helpers.m in Sources */,
 			);
