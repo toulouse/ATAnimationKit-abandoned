@@ -18,6 +18,7 @@
 		6B08F4581877B1B1003BE36F /* ATBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4541877B1B1003BE36F /* ATBasicAnimation.m */; };
 		6B08F4591877B1B1003BE36F /* ATPropertyAnimation_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4551877B1B1003BE36F /* ATPropertyAnimation_Subclass.h */; };
 		6B0AF6F91877DE3000124DA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF6F81877DE3000124DA6 /* QuartzCore.framework */; };
+		6B0AF6EA1877DD4C00124DA6 /* ATDeltaFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF6E91877DD4C00124DA6 /* ATDeltaFunctions.c */; };
 		6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAA01877640E001CE3A9 /* Cocoa.framework */; };
 		6BFAEAAB1877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEAA91877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */; };
@@ -83,6 +84,7 @@
 		6B08F4541877B1B1003BE36F /* ATBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBasicAnimation.m; sourceTree = "<group>"; };
 		6B08F4551877B1B1003BE36F /* ATPropertyAnimation_Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPropertyAnimation_Subclass.h; sourceTree = "<group>"; };
 		6B0AF6F81877DE3000124DA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6B0AF6E91877DD4C00124DA6 /* ATDeltaFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ATDeltaFunctions.c; sourceTree = "<group>"; };
 		6BFAEA9D1877640E001CE3A9 /* ATAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEAA01877640E001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BFAEAA31877640E001CE3A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,10 +121,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B0AF6F91877DE3000124DA6 /* QuartzCore.framework in Frameworks */,
 				6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */,
 				6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */,
 				6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */,
+				6B0AF6F91877DE3000124DA6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,11 +163,11 @@
 		6BFAEA9F1877640E001CE3A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B0AF6F81877DE3000124DA6 /* QuartzCore.framework */,
 				6BFAEAA21877640E001CE3A9 /* Other Frameworks */,
 				6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */,
 				6BFAEAA01877640E001CE3A9 /* Cocoa.framework */,
 				6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */,
+				6B0AF6F81877DE3000124DA6 /* QuartzCore.framework */,
 				6BFAEAB51877640E001CE3A9 /* XCTest.framework */,
 			);
 			name = Frameworks;
@@ -243,6 +245,7 @@
 		6BFAEAEA18776C36001CE3A9 /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				6B0AF6E91877DD4C00124DA6 /* ATDeltaFunctions.c */,
 				6B08F4331877AB66003BE36F /* ATDeltaFunctions.h */,
 				6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */,
 				6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */,
@@ -419,6 +422,7 @@
 				6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */,
 				6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */,
 				6B08F4581877B1B1003BE36F /* ATBasicAnimation.m in Sources */,
+				6B0AF6EA1877DD4C00124DA6 /* ATDeltaFunctions.c in Sources */,
 				6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */,
 				6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */,
 				6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */,

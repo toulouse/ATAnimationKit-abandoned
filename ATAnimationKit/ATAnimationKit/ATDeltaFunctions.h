@@ -3,28 +3,27 @@
 #ifndef ATDELTAFUNCTIONS_H_
 #define ATDELTAFUNCTIONS_H_
 
-#import <ATBase/ATBaseDefines.h>
+#include <CoreGraphics/CGAffineTransform.h>
+#include <CoreGraphics/CGGeometry.h>
 
-#import <CoreGraphics/CGGeometry.h>
+#include <QuartzCore/CATransform3D.h>
 
-AT_INLINE __attribute__((overloadable)) float delta(float a, float b) {
-    return b - a;
-}
+#define AT_DELTA(a, b) _Generic((a), \
+float: delta_float, \
+double: delta_double, \
+CGPoint: delta_CGPoint, \
+CGSize: delta_CGSize, \
+CGRect: delta_CGRect, \
+CGAffineTransform: delta_CGAffineTransform, \
+CATransform3D: delta_CATransform3D \
+)(a, b)
 
-AT_INLINE __attribute__((overloadable)) double delta(double a, double b) {
-    return b - a;
-}
-
-AT_INLINE __attribute__((overloadable)) CGPoint delta(CGPoint a, CGPoint b) {
-    return CGPointMake(b.x - a.x, b.y - a.y);
-}
-
-AT_INLINE __attribute__((overloadable)) CGSize delta(CGSize a, CGSize b) {
-    return CGSizeMake(b.width - a.width, b.height - a.height);
-}
-
-AT_INLINE __attribute__((overloadable)) CGRect delta(CGRect a, CGRect b) {
-    return (CGRect){delta(b.origin, a.origin), delta(b.size, a.size)};
-}
+float delta_float(float a, float b);
+double delta_double(double a, double b);
+CGPoint delta_CGPoint(CGPoint a, CGPoint b);
+CGSize delta_CGSize(CGSize a, CGSize b);
+CGRect delta_CGRect(CGRect a, CGRect b);
+CGAffineTransform delta_CGAffineTransform(CGAffineTransform a, CGAffineTransform b);
+CATransform3D delta_CATransform3D(CATransform3D a, CATransform3D b);
 
 #endif /* ATDELTAFUNCTIONS_H_ */
