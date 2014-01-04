@@ -5,6 +5,8 @@
 #import <ATBase/ATLog.h>
 #import <ATBase/ATAssert.h>
 
+#import <QuartzCore/CATransaction.h>
+
 #import "ATAnimation.h"
 #import "ATAnimation_Internal.h"
 #import "ATAnimation_Subclass.h"
@@ -61,6 +63,8 @@
 
 - (CFTimeInterval)applyAnimationsAtTime:(CFTimeInterval)time
 {
+    BOOL disableActions = [CATransaction disableActions];
+    [CATransaction setDisableActions:YES];
     // Remove normally stopped animations
     NSMutableArray *animationsToRemove = [NSMutableArray array];
     for (NSString *animationKey in _animations) {
@@ -102,6 +106,7 @@
         }
     }
 
+    [CATransaction setDisableActions:disableActions];
     return 0;
 }
 
