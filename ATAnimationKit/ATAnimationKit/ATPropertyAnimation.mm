@@ -41,11 +41,6 @@ const struct ATEncodings ATEncodings = {
     return self;
 }
 
-- (void)dealloc
-{
-    delete _propertyStrategy;
-}
-
 #pragma mark -
 
 - (void)setFromValue:(id)fromValue
