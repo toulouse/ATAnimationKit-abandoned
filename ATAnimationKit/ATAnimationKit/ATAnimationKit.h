@@ -5,11 +5,6 @@
 
 #include <ATAnimationKit/ATEasingFunctions.h>
 
-#if defined(__cplusplus)
-# include <ATAnimationKit/ATInterpolator.hpp>
-# include <ATAnimationKit/ATInterpolator+CoreGraphics.hpp>
-#endif
-
 #import <ATAnimationKit/ATDisplayLink.h>
 
 #endif /* ATANIMATIONKIT_H_ */
