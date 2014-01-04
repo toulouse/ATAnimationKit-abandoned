@@ -2,7 +2,7 @@
 
 #import "ATAssert.h"
 
-#import "ATLog.h"
+#import <ATBase/ATLog.h>
 
 @implementation ATAssert
 
