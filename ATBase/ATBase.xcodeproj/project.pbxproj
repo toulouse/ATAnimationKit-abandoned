@@ -33,6 +33,9 @@
 		6BFAEA7818775E36001CE3A9 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEA6618775E36001CE3A9 /* DDMultiFormatter.h */; };
 		6BFAEA7918775E36001CE3A9 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEA6718775E36001CE3A9 /* DDMultiFormatter.m */; };
 		6BFAEA7A18775E36001CE3A9 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEA6818775E36001CE3A9 /* README.txt */; };
+		6BFAEA8418775F95001CE3A9 /* ATAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEA8118775F95001CE3A9 /* ATAssert.h */; };
+		6BFAEA8518775F95001CE3A9 /* ATAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEA8218775F95001CE3A9 /* ATAssert.m */; };
+		6BFAEA8618775F95001CE3A9 /* ATBaseDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEA8318775F95001CE3A9 /* ATBaseDefines.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		6BFAEA6618775E36001CE3A9 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
 		6BFAEA6718775E36001CE3A9 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
 		6BFAEA6818775E36001CE3A9 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		6BFAEA8118775F95001CE3A9 /* ATAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAssert.h; sourceTree = "<group>"; };
+		6BFAEA8218775F95001CE3A9 /* ATAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAssert.m; sourceTree = "<group>"; };
+		6BFAEA8318775F95001CE3A9 /* ATBaseDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBaseDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				6BFAEA14187754C9001CE3A9 /* Supporting Files */,
+				6BFAEA8118775F95001CE3A9 /* ATAssert.h */,
+				6BFAEA8218775F95001CE3A9 /* ATAssert.m */,
 				6BFAEA1A187754C9001CE3A9 /* ATBase.h */,
+				6BFAEA8318775F95001CE3A9 /* ATBaseDefines.h */,
 				6BFAEA5218775CDE001CE3A9 /* ATLog.h */,
 			);
 			path = ATBase;
@@ -230,6 +239,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFAEA8418775F95001CE3A9 /* ATAssert.h in Headers */,
+				6BFAEA8618775F95001CE3A9 /* ATBaseDefines.h in Headers */,
 				6BFAEA5318775CDE001CE3A9 /* ATLog.h in Headers */,
 				6BFAEA6918775E36001CE3A9 /* DDAbstractDatabaseLogger.h in Headers */,
 				6BFAEA6B18775E36001CE3A9 /* DDASLLogger.h in Headers */,
@@ -339,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFAEA8518775F95001CE3A9 /* ATAssert.m in Sources */,
 				6BFAEA6A18775E36001CE3A9 /* DDAbstractDatabaseLogger.m in Sources */,
 				6BFAEA6C18775E36001CE3A9 /* DDASLLogger.m in Sources */,
 				6BFAEA7518775E36001CE3A9 /* DDContextFilterLogFormatter.m in Sources */,
