@@ -20,6 +20,7 @@
 		6B0AF7561877E62100124DA6 /* ATAnimationKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF7551877E62100124DA6 /* ATAnimationKitExampleTests.m */; };
 		6B0AF7651877E6D000124DA6 /* ATAnimationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF7641877E6D000124DA6 /* ATAnimationKit.framework */; };
 		6B0AF7671877E78100124DA6 /* ATBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF7661877E78100124DA6 /* ATBase.framework */; };
+		6B0AF7701877F08A00124DA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF76F1877F08A00124DA6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		6B0AF7551877E62100124DA6 /* ATAnimationKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAnimationKitExampleTests.m; sourceTree = "<group>"; };
 		6B0AF7641877E6D000124DA6 /* ATAnimationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATAnimationKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/ATWorkspace-aozgygxgjkuvbtfgoziymrczilmg/Build/Products/Debug/ATAnimationKit.framework"; sourceTree = "<group>"; };
 		6B0AF7661877E78100124DA6 /* ATBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATBase.framework; path = "../../../Library/Developer/Xcode/DerivedData/ATWorkspace-aozgygxgjkuvbtfgoziymrczilmg/Build/Products/Debug/ATBase.framework"; sourceTree = "<group>"; };
+		6B0AF76F1877F08A00124DA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				6B0AF7651877E6D000124DA6 /* ATAnimationKit.framework in Frameworks */,
 				6B0AF7671877E78100124DA6 /* ATBase.framework in Frameworks */,
 				6B0AF72C1877E62100124DA6 /* Cocoa.framework in Frameworks */,
+				6B0AF7701877F08A00124DA6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 				6B0AF7641877E6D000124DA6 /* ATAnimationKit.framework */,
 				6B0AF7661877E78100124DA6 /* ATBase.framework */,
 				6B0AF72B1877E62100124DA6 /* Cocoa.framework */,
+				6B0AF76F1877F08A00124DA6 /* QuartzCore.framework */,
 				6B0AF74A1877E62100124DA6 /* XCTest.framework */,
 			);
 			name = Frameworks;
