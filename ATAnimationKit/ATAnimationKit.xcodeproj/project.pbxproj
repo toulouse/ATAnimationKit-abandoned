@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAD1187766C5001CE3A9 /* ATBase.framework */; };
 		6B08F4341877AB66003BE36F /* ATDeltaFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4331877AB66003BE36F /* ATDeltaFunctions.h */; };
+		6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4371877AB95003BE36F /* ATGeometry.c */; };
+		6B08F43A1877AB95003BE36F /* ATGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4381877AB95003BE36F /* ATGeometry.h */; };
 		6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAA01877640E001CE3A9 /* Cocoa.framework */; };
 		6BFAEAAB1877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEAA91877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */; };
@@ -67,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		6B08F4331877AB66003BE36F /* ATDeltaFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDeltaFunctions.h; sourceTree = "<group>"; };
+		6B08F4371877AB95003BE36F /* ATGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ATGeometry.c; sourceTree = "<group>"; };
+		6B08F4381877AB95003BE36F /* ATGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGeometry.h; sourceTree = "<group>"; };
 		6BFAEA9D1877640E001CE3A9 /* ATAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEAA01877640E001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BFAEAA31877640E001CE3A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -230,6 +234,8 @@
 				6B08F4331877AB66003BE36F /* ATDeltaFunctions.h */,
 				6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */,
 				6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */,
+				6B08F4371877AB95003BE36F /* ATGeometry.c */,
+				6B08F4381877AB95003BE36F /* ATGeometry.h */,
 				6BFAEAF418776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp */,
 				6BFAEAF318776D90001CE3A9 /* ATInterpolator.hpp */,
 			);
@@ -264,6 +270,7 @@
 				6B08F4341877AB66003BE36F /* ATDeltaFunctions.h in Headers */,
 				6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */,
 				6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */,
+				6B08F43A1877AB95003BE36F /* ATGeometry.h in Headers */,
 				6BFAEAF618776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp in Headers */,
 				6BFAEAF518776D90001CE3A9 /* ATInterpolator.hpp in Headers */,
 				6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */,
@@ -395,6 +402,7 @@
 				6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */,
 				6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */,
 				6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */,
+				6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */,
 				6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
