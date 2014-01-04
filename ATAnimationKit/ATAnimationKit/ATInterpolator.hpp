@@ -3,24 +3,45 @@
 #ifndef ATINTERPOLATOR_H_
 #define ATINTERPOLATOR_H_
 
-class FloatInterpolator {
-protected:
-    const float _fromValue;
-    const float _toValue;
+class IInterpolator {
 public:
-    FloatInterpolator(float fromValue, float toValue) : _fromValue(fromValue), _toValue(toValue) {}
+    template<typename T>
+    T valueAtPercent(float percent);
+
+    template<typename T>
+    void setFromValue(T fromValue);
+
+    template<typename T>
+    void setToValue(T toValue);
+};
+
+template <typename T>
+class Interpolator : public IInterpolator {
+protected:
+    T _fromValue;
+    T _toValue;
+public:
+    T valueAtPercent(float percent);
+
+    void setFromValue(T fromValue) {
+        _fromValue = fromValue;
+    }
+
+    void setToValue(T toValue) {
+        _toValue = toValue;
+    }
+};
+
+class FloatInterpolator : public Interpolator<float> {
+public:
     float valueAtPercent(float percent) {
         return _fromValue + (_toValue - _fromValue) * percent;
     }
 };
 
-class DoubleInterpolator {
-protected:
-    const double _fromValue;
-    const double _toValue;
+class DoubleInterpolator : public Interpolator<double> {
 public:
-    DoubleInterpolator(double fromValue, double toValue) : _fromValue(fromValue), _toValue(toValue) {}
-    double valueAtPercent(double percent) {
+    double valueAtPercent(float percent) {
         return _fromValue + (_toValue - _fromValue) * percent;
     }
 };

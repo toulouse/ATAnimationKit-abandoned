@@ -11,6 +11,10 @@
 		6B08F4341877AB66003BE36F /* ATDeltaFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4331877AB66003BE36F /* ATDeltaFunctions.h */; };
 		6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4371877AB95003BE36F /* ATGeometry.c */; };
 		6B08F43A1877AB95003BE36F /* ATGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4381877AB95003BE36F /* ATGeometry.h */; };
+		6B08F4561877B1B1003BE36F /* ATAnimation_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4521877B1B1003BE36F /* ATAnimation_Subclass.h */; };
+		6B08F4571877B1B1003BE36F /* ATBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4531877B1B1003BE36F /* ATBasicAnimation.h */; };
+		6B08F4581877B1B1003BE36F /* ATBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4541877B1B1003BE36F /* ATBasicAnimation.m */; };
+		6B08F4591877B1B1003BE36F /* ATPropertyAnimation_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4551877B1B1003BE36F /* ATPropertyAnimation_Subclass.h */; };
 		6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAA01877640E001CE3A9 /* Cocoa.framework */; };
 		6BFAEAAB1877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEAA91877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */; };
@@ -33,7 +37,7 @@
 		6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEB0018776F73001CE3A9 /* ATAnimator.m */; };
 		6BFAEB0918776F73001CE3A9 /* ATPropertyAnimation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.h */; };
 		6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */; };
-		6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.m */; };
+		6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		6B08F4331877AB66003BE36F /* ATDeltaFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDeltaFunctions.h; sourceTree = "<group>"; };
 		6B08F4371877AB95003BE36F /* ATGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ATGeometry.c; sourceTree = "<group>"; };
 		6B08F4381877AB95003BE36F /* ATGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGeometry.h; sourceTree = "<group>"; };
+		6B08F4521877B1B1003BE36F /* ATAnimation_Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimation_Subclass.h; sourceTree = "<group>"; };
+		6B08F4531877B1B1003BE36F /* ATBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBasicAnimation.h; sourceTree = "<group>"; };
+		6B08F4541877B1B1003BE36F /* ATBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBasicAnimation.m; sourceTree = "<group>"; };
+		6B08F4551877B1B1003BE36F /* ATPropertyAnimation_Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPropertyAnimation_Subclass.h; sourceTree = "<group>"; };
 		6BFAEA9D1877640E001CE3A9 /* ATAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEAA01877640E001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BFAEAA31877640E001CE3A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,7 +109,7 @@
 		6BFAEB0018776F73001CE3A9 /* ATAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimator.m; sourceTree = "<group>"; };
 		6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPropertyAnimation_Internal.h; sourceTree = "<group>"; };
 		6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPropertyAnimation.h; sourceTree = "<group>"; };
-		6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATPropertyAnimation.m; sourceTree = "<group>"; };
+		6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ATPropertyAnimation.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,11 +256,15 @@
 				6BFAEAFD18776F73001CE3A9 /* ATAnimation.h */,
 				6BFAEAFE18776F73001CE3A9 /* ATAnimation.m */,
 				6BFAEAFC18776F73001CE3A9 /* ATAnimation_Internal.h */,
+				6B08F4521877B1B1003BE36F /* ATAnimation_Subclass.h */,
 				6BFAEAFF18776F73001CE3A9 /* ATAnimator.h */,
 				6BFAEB0018776F73001CE3A9 /* ATAnimator.m */,
+				6B08F4531877B1B1003BE36F /* ATBasicAnimation.h */,
+				6B08F4541877B1B1003BE36F /* ATBasicAnimation.m */,
 				6BFAEB0218776F73001CE3A9 /* ATPropertyAnimation.h */,
-				6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.m */,
+				6BFAEB0318776F73001CE3A9 /* ATPropertyAnimation.mm */,
 				6BFAEB0118776F73001CE3A9 /* ATPropertyAnimation_Internal.h */,
+				6B08F4551877B1B1003BE36F /* ATPropertyAnimation_Subclass.h */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -266,7 +278,9 @@
 			files = (
 				6BFAEB0518776F73001CE3A9 /* ATAnimation.h in Headers */,
 				6BFAEB0418776F73001CE3A9 /* ATAnimation_Internal.h in Headers */,
+				6B08F4561877B1B1003BE36F /* ATAnimation_Subclass.h in Headers */,
 				6BFAEB0718776F73001CE3A9 /* ATAnimator.h in Headers */,
+				6B08F4571877B1B1003BE36F /* ATBasicAnimation.h in Headers */,
 				6B08F4341877AB66003BE36F /* ATDeltaFunctions.h in Headers */,
 				6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */,
 				6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */,
@@ -275,6 +289,7 @@
 				6BFAEAF518776D90001CE3A9 /* ATInterpolator.hpp in Headers */,
 				6BFAEB0A18776F73001CE3A9 /* ATPropertyAnimation.h in Headers */,
 				6BFAEB0918776F73001CE3A9 /* ATPropertyAnimation_Internal.h in Headers */,
+				6B08F4591877B1B1003BE36F /* ATPropertyAnimation_Subclass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +415,11 @@
 				6BFAEB0618776F73001CE3A9 /* ATAnimation.m in Sources */,
 				6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */,
 				6BFAEB0818776F73001CE3A9 /* ATAnimator.m in Sources */,
+				6B08F4581877B1B1003BE36F /* ATBasicAnimation.m in Sources */,
 				6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */,
 				6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */,
 				6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */,
-				6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.m in Sources */,
+				6BFAEB0B18776F73001CE3A9 /* ATPropertyAnimation.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
