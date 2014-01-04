@@ -21,6 +21,8 @@
 		6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */; };
 		6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */; };
 		6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */; };
+		6BFAEAF518776D90001CE3A9 /* ATInterpolator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAF318776D90001CE3A9 /* ATInterpolator.hpp */; };
+		6BFAEAF618776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAF418776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ATEasingFunctions.c; sourceTree = "<group>"; };
 		6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEasingFunctions.h; sourceTree = "<group>"; };
+		6BFAEAF318776D90001CE3A9 /* ATInterpolator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ATInterpolator.hpp; sourceTree = "<group>"; };
+		6BFAEAF418776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "ATInterpolator+CoreGraphics.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 			children = (
 				6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */,
 				6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */,
+				6BFAEAF418776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp */,
+				6BFAEAF318776D90001CE3A9 /* ATInterpolator.hpp */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 			files = (
 				6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */,
 				6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */,
+				6BFAEAF618776D90001CE3A9 /* ATInterpolator+CoreGraphics.hpp in Headers */,
+				6BFAEAF518776D90001CE3A9 /* ATInterpolator.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
