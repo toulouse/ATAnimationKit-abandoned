@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAD1187766C5001CE3A9 /* ATBase.framework */; };
 		6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAA01877640E001CE3A9 /* Cocoa.framework */; };
 		6BFAEAAB1877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEAA91877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */; };
@@ -24,6 +25,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6BFAEA9C1877640E001CE3A9;
 			remoteInfo = ATAnimationKit;
+		};
+		6BFAEAD0187766C5001CE3A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFAEA0A187754C8001CE3A9;
+			remoteInfo = ATBase;
+		};
+		6BFAEAD2187766C5001CE3A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFAEA21187754C9001CE3A9;
+			remoteInfo = ATBaseTests;
+		};
+		6BFAEAD51877684A001CE3A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFAEA09187754C8001CE3A9;
+			remoteInfo = ATBase;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,6 +65,7 @@
 		6BFAEABD1877640E001CE3A9 /* ATAnimationKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ATAnimationKitTests-Info.plist"; sourceTree = "<group>"; };
 		6BFAEABF1877640E001CE3A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6BFAEAC11877640E001CE3A9 /* ATAnimationKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAnimationKitTests.m; sourceTree = "<group>"; };
+		6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ATBase.xcodeproj; path = ../ATBase/ATBase.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */,
 				6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				6BFAEAA21877640E001CE3A9 /* Other Frameworks */,
+				6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */,
 				6BFAEAA01877640E001CE3A9 /* Cocoa.framework */,
 				6BFAEAB51877640E001CE3A9 /* XCTest.framework */,
 			);
@@ -144,6 +169,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6BFAEACC187766C4001CE3A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAEAD1187766C5001CE3A9 /* ATBase.framework */,
+				6BFAEAD3187766C5001CE3A9 /* ATBaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -169,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6BFAEAD61877684A001CE3A9 /* PBXTargetDependency */,
 			);
 			name = ATAnimationKit;
 			productName = ATAnimationKit;
@@ -217,6 +252,12 @@
 			mainGroup = 6BFAEA931877640D001CE3A9;
 			productRefGroup = 6BFAEA9E1877640E001CE3A9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6BFAEACC187766C4001CE3A9 /* Products */;
+					ProjectRef = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6BFAEA9C1877640E001CE3A9 /* ATAnimationKit */,
@@ -224,6 +265,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6BFAEAD1187766C5001CE3A9 /* ATBase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ATBase.framework;
+			remoteRef = 6BFAEAD0187766C5001CE3A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6BFAEAD3187766C5001CE3A9 /* ATBaseTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ATBaseTests.xctest;
+			remoteRef = 6BFAEAD2187766C5001CE3A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6BFAEA9B1877640E001CE3A9 /* Resources */ = {
@@ -268,6 +326,11 @@
 			isa = PBXTargetDependency;
 			target = 6BFAEA9C1877640E001CE3A9 /* ATAnimationKit */;
 			targetProxy = 6BFAEAB81877640E001CE3A9 /* PBXContainerItemProxy */;
+		};
+		6BFAEAD61877684A001CE3A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ATBase;
+			targetProxy = 6BFAEAD51877684A001CE3A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -448,6 +511,7 @@
 				6BFAEAC71877640E001CE3A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BFAEAC81877640E001CE3A9 /* Build configuration list for PBXNativeTarget "ATAnimationKitTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +520,7 @@
 				6BFAEACA1877640E001CE3A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
