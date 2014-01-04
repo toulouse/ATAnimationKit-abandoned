@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAD1187766C5001CE3A9 /* ATBase.framework */; };
 		6B08F4391877AB95003BE36F /* ATGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B08F4371877AB95003BE36F /* ATGeometry.c */; };
 		6B08F43A1877AB95003BE36F /* ATGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4381877AB95003BE36F /* ATGeometry.h */; };
 		6B08F4561877B1B1003BE36F /* ATAnimation_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B08F4521877B1B1003BE36F /* ATAnimation_Subclass.h */; };
@@ -22,6 +21,7 @@
 		6B0AF70F1877E1D000124DA6 /* ATValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AF70B1877E1D000124DA6 /* ATValue.h */; };
 		6B0AF7161877E45900124DA6 /* ATBasicAnimationStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF7141877E45900124DA6 /* ATBasicAnimationStrategy.cpp */; };
 		6B0AF7171877E45900124DA6 /* ATBasicAnimationStrategy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AF7151877E45900124DA6 /* ATBasicAnimationStrategy.hpp */; };
+		6B0AF76A1877E7BA00124DA6 /* ATBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0AF7691877E7BA00124DA6 /* ATBase.framework */; };
 		6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAA01877640E001CE3A9 /* Cocoa.framework */; };
 		6BFAEAAB1877640E001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEAA91877640E001CE3A9 /* InfoPlist.strings */; };
 		6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */; };
@@ -52,27 +52,6 @@
 			remoteGlobalIDString = 6BFAEA9C1877640E001CE3A9;
 			remoteInfo = ATAnimationKit;
 		};
-		6BFAEAD0187766C5001CE3A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6BFAEA0A187754C8001CE3A9;
-			remoteInfo = ATBase;
-		};
-		6BFAEAD2187766C5001CE3A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6BFAEA21187754C9001CE3A9;
-			remoteInfo = ATBaseTests;
-		};
-		6BFAEAD51877684A001CE3A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BFAEA09187754C8001CE3A9;
-			remoteInfo = ATBase;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +69,7 @@
 		6B0AF70B1877E1D000124DA6 /* ATValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATValue.h; sourceTree = "<group>"; };
 		6B0AF7141877E45900124DA6 /* ATBasicAnimationStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ATBasicAnimationStrategy.cpp; sourceTree = "<group>"; };
 		6B0AF7151877E45900124DA6 /* ATBasicAnimationStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ATBasicAnimationStrategy.hpp; sourceTree = "<group>"; };
+		6B0AF7691877E7BA00124DA6 /* ATBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATBase.framework; path = "../../../Library/Developer/Xcode/DerivedData/ATWorkspace-aozgygxgjkuvbtfgoziymrczilmg/Build/Products/Debug/ATBase.framework"; sourceTree = "<group>"; };
 		6BFAEA9D1877640E001CE3A9 /* ATAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEAA01877640E001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BFAEAA31877640E001CE3A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,7 +85,6 @@
 		6BFAEABD1877640E001CE3A9 /* ATAnimationKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ATAnimationKitTests-Info.plist"; sourceTree = "<group>"; };
 		6BFAEABF1877640E001CE3A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6BFAEAC11877640E001CE3A9 /* ATAnimationKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAnimationKitTests.m; sourceTree = "<group>"; };
-		6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ATBase.xcodeproj; path = ../ATBase/ATBase.xcodeproj; sourceTree = "<group>"; };
 		6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDisplayLink.h; sourceTree = "<group>"; };
 		6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDisplayLink.m; sourceTree = "<group>"; };
 		6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -125,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B08F42F1877A7A0003BE36F /* ATBase.framework in Frameworks */,
+				6B0AF76A1877E7BA00124DA6 /* ATBase.framework in Frameworks */,
 				6BFAEAA11877640E001CE3A9 /* Cocoa.framework in Frameworks */,
 				6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */,
 				6B0AF6F91877DE3000124DA6 /* QuartzCore.framework in Frameworks */,
@@ -168,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				6BFAEAA21877640E001CE3A9 /* Other Frameworks */,
-				6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */,
+				6B0AF7691877E7BA00124DA6 /* ATBase.framework */,
 				6BFAEAA01877640E001CE3A9 /* Cocoa.framework */,
 				6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */,
 				6B0AF6F81877DE3000124DA6 /* QuartzCore.framework */,
@@ -226,15 +205,6 @@
 				6BFAEABE1877640E001CE3A9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6BFAEACC187766C4001CE3A9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6BFAEAD1187766C5001CE3A9 /* ATBase.framework */,
-				6BFAEAD3187766C5001CE3A9 /* ATBaseTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6BFAEAE718776C11001CE3A9 /* Display Link */ = {
@@ -321,7 +291,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6BFAEAD61877684A001CE3A9 /* PBXTargetDependency */,
 			);
 			name = ATAnimationKit;
 			productName = ATAnimationKit;
@@ -370,12 +339,6 @@
 			mainGroup = 6BFAEA931877640D001CE3A9;
 			productRefGroup = 6BFAEA9E1877640E001CE3A9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6BFAEACC187766C4001CE3A9 /* Products */;
-					ProjectRef = 6BFAEACB187766C4001CE3A9 /* ATBase.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				6BFAEA9C1877640E001CE3A9 /* ATAnimationKit */,
@@ -383,23 +346,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		6BFAEAD1187766C5001CE3A9 /* ATBase.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ATBase.framework;
-			remoteRef = 6BFAEAD0187766C5001CE3A9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6BFAEAD3187766C5001CE3A9 /* ATBaseTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ATBaseTests.xctest;
-			remoteRef = 6BFAEAD2187766C5001CE3A9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6BFAEA9B1877640E001CE3A9 /* Resources */ = {
@@ -454,11 +400,6 @@
 			isa = PBXTargetDependency;
 			target = 6BFAEA9C1877640E001CE3A9 /* ATAnimationKit */;
 			targetProxy = 6BFAEAB81877640E001CE3A9 /* PBXContainerItemProxy */;
-		};
-		6BFAEAD61877684A001CE3A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ATBase;
-			targetProxy = 6BFAEAD51877684A001CE3A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,6 +497,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATAnimationKit/ATAnimationKit-Prefix.pch";
@@ -571,6 +513,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATAnimationKit/ATAnimationKit-Prefix.pch";
