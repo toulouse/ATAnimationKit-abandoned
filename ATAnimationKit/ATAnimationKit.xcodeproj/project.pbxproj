@@ -19,6 +19,8 @@
 		6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */; };
 		6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */; };
 		6BFAEAE418776BAA001CE3A9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */; };
+		6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */; };
+		6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		6BFAEADD18776B7C001CE3A9 /* ATDisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATDisplayLink.h; sourceTree = "<group>"; };
 		6BFAEADE18776B7C001CE3A9 /* ATDisplayLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATDisplayLink.m; sourceTree = "<group>"; };
 		6BFAEAE318776BA9001CE3A9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ATEasingFunctions.c; sourceTree = "<group>"; };
+		6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEasingFunctions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				6BFAEAE718776C11001CE3A9 /* Display Link */,
+				6BFAEAEA18776C36001CE3A9 /* Math */,
 				6BFAEAA71877640E001CE3A9 /* Supporting Files */,
 				6BFAEAAD1877640E001CE3A9 /* ATAnimationKit.h */,
 				6BFAEAAE1877640E001CE3A9 /* ATAnimationKit.m */,
@@ -196,6 +201,15 @@
 			name = "Display Link";
 			sourceTree = "<group>";
 		};
+		6BFAEAEA18776C36001CE3A9 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAEAEC18776C3D001CE3A9 /* ATEasingFunctions.c */,
+				6BFAEAED18776C3D001CE3A9 /* ATEasingFunctions.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -204,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFAEADF18776B7C001CE3A9 /* ATDisplayLink.h in Headers */,
+				6BFAEAEF18776C3D001CE3A9 /* ATEasingFunctions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +343,7 @@
 			files = (
 				6BFAEAAF1877640E001CE3A9 /* ATAnimationKit.m in Sources */,
 				6BFAEAE018776B7C001CE3A9 /* ATDisplayLink.m in Sources */,
+				6BFAEAEE18776C3D001CE3A9 /* ATEasingFunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
