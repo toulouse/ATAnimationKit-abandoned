@@ -81,7 +81,6 @@
             continue;
         }
 
-        animation.running = NO;
         [animation _stopWithAnimator:self finished:NO];
         [_animations removeObjectForKey:animationKey];
     }
