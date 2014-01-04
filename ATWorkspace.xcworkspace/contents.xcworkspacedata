@@ -7,4 +7,7 @@
    <FileRef
       location = "group:ATAnimationKit/ATAnimationKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ATAnimationKitExample/ATAnimationKitExample.xcodeproj">
+   </FileRef>
 </Workspace>
