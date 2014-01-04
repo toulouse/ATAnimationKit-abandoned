@@ -10,7 +10,7 @@
 
 @property (nonatomic, assign, readonly) BOOL shouldStart;
 
-@property (nonatomic, assign, getter = isRunning) BOOL running;
+@property (nonatomic, assign, readwrite, getter = isRunning) BOOL running;
 
 - (void)_animatorDidAddAnimation:(ATAnimator *)animator;
 

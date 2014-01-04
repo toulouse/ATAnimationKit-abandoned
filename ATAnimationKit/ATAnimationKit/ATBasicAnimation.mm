@@ -36,7 +36,7 @@
     [super applyAnimationAtTime:time];
     
     const CFTimeInterval timeSinceStart = (time - self.beganTime);
-    self.percent = timeSinceStart / self.duration;
+    self.percent = timeSinceStart / _duration;
 }
 
 #pragma mark -

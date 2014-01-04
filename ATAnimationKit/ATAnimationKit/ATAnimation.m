@@ -6,21 +6,9 @@
 
 #import <ATBase/ATAssert.h>
 
-@implementation ATAnimation {
-    CFTimeInterval _beganTime;
-    CFTimeInterval _lastFrameTime;
-}
+@implementation ATAnimation
 
-+ (instancetype)animation
-{
-    return [[self alloc] init];
-}
-
-- (BOOL)shouldStopAtTime:(CFTimeInterval)time
-{
-    AT_IMPLEMENTED_BY_SUBCLASS;
-    return YES;
-}
+#pragma mark - Internal methods
 
 - (void)_animatorDidAddAnimation:(ATAnimator *)animator
 {
@@ -73,6 +61,14 @@
     if ([_delegate respondsToSelector:@selector(animationDidStop:finished:)]) {
         [_delegate animationDidStop:self finished:finished];
     }
+}
+
+#pragma mark - Subclass methods
+
+- (BOOL)shouldStopAtTime:(CFTimeInterval)time
+{
+    AT_IMPLEMENTED_BY_SUBCLASS;
+    return YES;
 }
 
 - (void)animatorDidAddAnimation:(ATAnimator *)animator
