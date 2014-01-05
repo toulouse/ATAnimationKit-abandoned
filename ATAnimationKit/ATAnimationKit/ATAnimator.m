@@ -77,14 +77,14 @@
     }
     [_animationsToAdd removeAllObjects];
 
-    // Remove normally stopped animations
+    // Remove normally stopped animations, except if they should start
     NSMutableArray *animationsToRemove = [NSMutableArray array];
     for (NSString *animationKey in _animations) {
         ATAnimation *animation = _animations[animationKey];
         if (animation.running && [animation shouldStopAtTime:time]) {
             [animation _stopWithAnimator:self finished:YES];
         }
-        if (!animation.running && animation.removedOnCompletion) {
+        if (!animation.running && !animation.shouldStart && animation.removedOnCompletion) {
             [animationsToRemove addObject:animationKey];
         }
     }
