@@ -8,6 +8,14 @@
 
 @implementation ATAnimation
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _removedOnCompletion = YES;
+    }
+    return self;
+}
+
 #pragma mark - Internal methods
 
 - (void)_animatorDidAddAnimation:(ATAnimator *)animator
