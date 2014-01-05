@@ -16,6 +16,7 @@
 @implementation ATAnimator {
     ATDisplayLink *_displayLink;
     NSMutableDictionary *_animations;
+    NSMutableDictionary *_animationsToAdd;
     NSMutableSet *_animationKeysToForceRemove;
     CFTimeInterval _timeOrigin;
 }
@@ -36,6 +37,7 @@
         _displayLink = [ATDisplayLink displayLinkWithTarget:self selector:@selector(displayLinkDidNotify:)];
 
         _animations = [NSMutableDictionary dictionary];
+        _animationsToAdd = [NSMutableDictionary dictionary];
         _animationKeysToForceRemove = [NSMutableSet set];
         _timeOrigin = 0;
     }
@@ -65,6 +67,16 @@
 {
     BOOL disableActions = [CATransaction disableActions];
     [CATransaction setDisableActions:YES];
+
+    // TODO: add and remove animations in the order they were sent
+    // Add queued animations
+    for (NSString *animationKey in _animationsToAdd) {
+        ATAnimation *animation = _animationsToAdd[animationKey];
+        _animations[animationKey] = animation;
+        [animation _animatorDidAddAnimation:self];
+    }
+    [_animationsToAdd removeAllObjects];
+
     // Remove normally stopped animations
     NSMutableArray *animationsToRemove = [NSMutableArray array];
     for (NSString *animationKey in _animations) {
@@ -113,23 +125,30 @@
 - (void)addAnimation:(ATAnimation *)animation forKey:(NSString *)key
 {
     ATAssertMainThread();
-    if ([_animations objectForKey:key]) {
+    if (_animations[key]) {
         ATLogWarn(@"Warning! Animation with key %@ already existed!", key);
     }
-    [_animations setObject:animation forKey:key];
-    [animation _animatorDidAddAnimation:self];
+    _animationsToAdd[key] = animation;
 }
 
 - (ATAnimation *)animationForKey:(NSString *)key
 {
     ATAssertMainThread();
-    return [_animations objectForKey:key];
+    ATAnimation *animation = _animations[key];
+    if (animation) {
+        return animation;
+    }
+    return _animationsToAdd[key];
 }
 
 - (void)removeAnimationForKey:(NSString *)key
 {
     ATAssertMainThread();
-    [_animationKeysToForceRemove addObject:key];
+    if (_animationsToAdd[key]) {
+        [_animationsToAdd removeObjectForKey:key];
+    } else {
+        [_animationKeysToForceRemove addObject:key];
+    }
 }
 
 @end
