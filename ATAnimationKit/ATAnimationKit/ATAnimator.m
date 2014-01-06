@@ -46,9 +46,8 @@
 
 - (void)displayLinkDidNotify:(ATDisplayLink *)displayLink
 {
-    [self applyAnimationsAtTime:_timeOrigin];
-
     _timeOrigin += displayLink.timestamp;
+    [self applyAnimationsAtTime:_timeOrigin];
 }
 
 - (void)start

@@ -52,9 +52,8 @@
             return;
         }
 
-        _lastFrameTime = time;
-        
         [self applyAnimationAtTime:time];
+        _lastFrameTime = time;
     }
 }
 
