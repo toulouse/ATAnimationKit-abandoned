@@ -6,8 +6,8 @@
 
 @interface ATAnimation ()
 
-@property (nonatomic, assign) CFTimeInterval beganTime;
-@property (nonatomic, assign) CFTimeInterval lastFrameTime;
+@property(nonatomic, assign) CFTimeInterval beganTime;
+@property(nonatomic, assign) CFTimeInterval lastFrameTime;
 
 - (void)animatorDidAddAnimation:(ATAnimator *)animator;
 

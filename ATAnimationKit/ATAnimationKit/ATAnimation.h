@@ -11,7 +11,7 @@
 // TODO: document why the delegate is retained
 @property(nonatomic, strong) id<ATAnimationDelegate> delegate;
 
-@property (nonatomic, assign, readonly, getter = isRunning) BOOL running;
+@property(nonatomic, assign, readonly, getter=isRunning) BOOL running;
 
 @end
 
@@ -22,4 +22,3 @@
 - (void)animationDidStop:(ATAnimation *)animation finished:(BOOL)finished;
 
 @end
-

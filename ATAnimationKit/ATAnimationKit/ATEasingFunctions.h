@@ -10,8 +10,8 @@
 #define CURVE_REFINEMENT_ITERATIONS 5
 
 struct ATBezierCurve {
-    const CGPoint controlPoint0;
-    const CGPoint controlPoint1;
+  const CGPoint controlPoint0;
+  const CGPoint controlPoint1;
 };
 typedef struct ATBezierCurve ATBezierCurve;
 

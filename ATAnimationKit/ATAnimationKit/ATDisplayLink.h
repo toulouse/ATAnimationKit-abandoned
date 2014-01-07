@@ -4,7 +4,7 @@
 
 + (ATDisplayLink *)displayLinkWithTarget:(id)target selector:(SEL)sel;
 
-@property (nonatomic, readonly) CFTimeInterval timestamp;
-@property (nonatomic, getter=isPaused) BOOL paused;
+@property(nonatomic, readonly) CFTimeInterval timestamp;
+@property(nonatomic, getter=isPaused) BOOL paused;
 
 @end

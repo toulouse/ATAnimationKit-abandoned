@@ -4,11 +4,12 @@
 
 // TODO: ATCAssert
 
-#define ATAssert(condition, ...) [ATAssert _internalAssertWithCondition:(BOOL)(condition) \
-                                                         prettyFunction:__PRETTY_FUNCTION__ \
-                                                                   file: __FILE__ \
-                                                                   line: __LINE__ \
-                                                                 format:__VA_ARGS__]
+#define ATAssert(condition, ...)                                                                                       \
+  [ATAssert _internalAssertWithCondition:(BOOL)(condition)                                                             \
+                          prettyFunction:__PRETTY_FUNCTION__                                                           \
+                                    file:__FILE__                                                                      \
+                                    line:__LINE__                                                                      \
+                                  format:__VA_ARGS__]
 #define ATFailAssert(...) ATAssert(NO, ##__VA_ARGS__)
 #define ATAssertMainThread() ATAssert([NSThread isMainThread], @"Thread affinity error: called from non-main thread")
 #define ATAssertNotMainThread() ATAssert(![NSThread isMainThread], @"Thread affinity error: called from main thread")
@@ -21,6 +22,6 @@
                       prettyFunction:(const char *)prettyFunc
                                 file:(const char *)file
                                 line:(int)line
-                              format:(NSString *)format, ... __attribute__ ((format (__NSString__, 5, 6)));
+                              format:(NSString *)format, ... __attribute__((format(__NSString__, 5, 6)));
 
 @end

@@ -8,8 +8,8 @@ using AT::Animation::PropertyStrategy;
 
 @interface ATPropertyAnimation ()
 
-@property (nonatomic, assign) PropertyStrategy *propertyStrategy;
+@property(nonatomic, assign) PropertyStrategy *propertyStrategy;
 
-@property (nonatomic, copy, readonly) NSString *encodedType;
+@property(nonatomic, copy, readonly) NSString *encodedType;
 
 @end

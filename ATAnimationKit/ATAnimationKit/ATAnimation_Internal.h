@@ -5,12 +5,12 @@
 #import "ATAnimator.h"
 
 @interface ATAnimation () {
-    BOOL _shouldStart;
+  BOOL _shouldStart;
 }
 
-@property (nonatomic, assign, readonly) BOOL shouldStart;
+@property(nonatomic, assign, readonly) BOOL shouldStart;
 
-@property (nonatomic, assign, readwrite, getter = isRunning) BOOL running;
+@property(nonatomic, assign, readwrite, getter=isRunning) BOOL running;
 
 - (void)_animatorDidAddAnimation:(ATAnimator *)animator;
 

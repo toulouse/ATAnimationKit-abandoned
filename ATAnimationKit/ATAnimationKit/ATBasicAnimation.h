@@ -4,6 +4,6 @@
 
 @interface ATBasicAnimation : ATPropertyAnimation
 
-@property (nonatomic, assign) CFTimeInterval duration;
+@property(nonatomic, assign) CFTimeInterval duration;
 
 @end

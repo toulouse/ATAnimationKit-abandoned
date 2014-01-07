@@ -4,23 +4,23 @@
 #define ATBASEDEFINES_H_
 
 #if defined(__cplusplus)
-#  define AT_EXTERN extern "C"
+#define AT_EXTERN extern "C"
 #else
-#  define AT_EXTERN extern
+#define AT_EXTERN extern
 #endif
 
 #if defined(__cplusplus)
-# if __has_attribute(always_inline)
-#  define AT_INLINE inline __attribute__((always_inline))
-# else
-#  define AT_INLINE inline
-# endif
+#if __has_attribute(always_inline)
+#define AT_INLINE inline __attribute__((always_inline))
 #else
-# if __has_attribute(always_inline)
-#  define AT_INLINE static inline __attribute__((always_inline))
-# else
-#  define AT_INLINE static inline
-# endif
+#define AT_INLINE inline
+#endif
+#else
+#if __has_attribute(always_inline)
+#define AT_INLINE static inline __attribute__((always_inline))
+#else
+#define AT_INLINE static inline
+#endif
 #endif
 
 #endif /* ATBASEDEFINES_H_ */

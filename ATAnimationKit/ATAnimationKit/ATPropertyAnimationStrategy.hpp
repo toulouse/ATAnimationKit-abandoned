@@ -6,27 +6,28 @@
 #include "ATValue.h"
 
 namespace AT {
-    namespace Animation {
+namespace Animation {
 
 #pragma mark - Property Strategy Base
 
-        class PropertyStrategy {
-        protected:
-            ATValue _fromValue;
-            ATValue _toValue;
-            ATValue _currentValue;
-        public:
-            void setFromValue(ATValue fromValue);
-            ATValue getFromValue();
+class PropertyStrategy {
+protected:
+  ATValue _fromValue;
+  ATValue _toValue;
+  ATValue _currentValue;
 
-            void setToValue(ATValue toValue);
-            ATValue getToValue();
-            
-            ATValue getCurrentValue();
-        };
+public:
+  void setFromValue(ATValue fromValue);
+  ATValue getFromValue();
 
-        template <class Derived, typename T>
-        class PropertyStrategyTemplate {};
-    }
+  void setToValue(ATValue toValue);
+  ATValue getToValue();
+
+  ATValue getCurrentValue();
+};
+
+template <class Derived, typename T> class PropertyStrategyTemplate {
+};
+}
 }
 #endif /* ATPROPERTYANIMATIONSTRATEGY_H_ */

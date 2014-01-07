@@ -9,13 +9,13 @@
 #include <QuartzCore/CATransform3D.h>
 
 union ATValue {
-        float floatValue;
-        double doubleValue;
-        CGPoint pointValue;
-        CGSize sizeValue;
-        CGRect rectValue;
-        CGAffineTransform affineTransformValue;
-        CATransform3D transform3DValue;
+  float floatValue;
+  double doubleValue;
+  CGPoint pointValue;
+  CGSize sizeValue;
+  CGRect rectValue;
+  CGAffineTransform affineTransformValue;
+  CATransform3D transform3DValue;
 };
 
 #endif /* ATVALUE_H_ */
