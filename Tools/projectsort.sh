@@ -1,2 +1,3 @@
 #!/bin/sh
-./sort-Xcode-project-file.pl ATAnimationKit/ATAnimationKit.xcodeproj/project.pbxproj ATBase/ATBase.xcodeproj/project.pbxproj ATAnimationKitExample/ATAnimationKitExample.xcodeproj/project.pbxproj
+export REPO_ROOT=$HOME/code/AT
+$REPO_ROOT/Tools/sort-Xcode-project-file.pl $REPO_ROOT/ATAnimationKit/ATAnimationKit.xcodeproj/project.pbxproj $REPO_ROOT/ATBase/ATBase.xcodeproj/project.pbxproj $REPO_ROOT/ATAnimationKitExample/ATAnimationKitExample.xcodeproj/project.pbxproj
