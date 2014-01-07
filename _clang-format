@@ -1,0 +1,3 @@
+BasedOnStyle:  LLVM
+BreakBeforeBraces: Stroustrup
+ColumnLimit:     120
