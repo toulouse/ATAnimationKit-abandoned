@@ -7,6 +7,7 @@
 @implementation ATAssert
 
 + (void)_internalAssertWithCondition:(BOOL)condition
+                             isFatal:(BOOL)fatal
                       prettyFunction:(const char *)prettyFunction
                                 file:(const char *)file
                                 line:(int)line
@@ -27,7 +28,11 @@
       ATLogError(@"Assertion at %s:%d", prettyFunction, line);
     }
 
-    abort();
+    if (fatal) {
+      abort();
+    } else {
+      raise(SIGTRAP);
+    }
   }
 }
 
