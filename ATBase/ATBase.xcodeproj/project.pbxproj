@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B0AF7041877DFAA00124DA6 /* NSNumber+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */; };
 		6B0AF7051877DFAA00124DA6 /* NSNumber+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */; };
+		6BB6D0FC18A4C0E200630FB3 /* ATLiteralString.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB6D0FA18A4C0E200630FB3 /* ATLiteralString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEA0E187754C9001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA0D187754C9001CE3A9 /* Cocoa.framework */; };
 		6BFAEA18187754C9001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEA16187754C9001CE3A9 /* InfoPlist.strings */; };
 		6BFAEA23187754C9001CE3A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA22187754C9001CE3A9 /* XCTest.framework */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Helpers.h"; sourceTree = "<group>"; };
 		6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Helpers.m"; sourceTree = "<group>"; };
+		6BB6D0FA18A4C0E200630FB3 /* ATLiteralString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLiteralString.h; sourceTree = "<group>"; };
 		6BFAEA0A187754C8001CE3A9 /* ATBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEA0D187754C9001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BFAEA10187754C9001CE3A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -173,6 +175,7 @@
 				6BFAEA8218775F95001CE3A9 /* ATAssert.m */,
 				6BFAEA1A187754C9001CE3A9 /* ATBase.h */,
 				6BFAEA8318775F95001CE3A9 /* ATBaseDefines.h */,
+				6BB6D0FA18A4C0E200630FB3 /* ATLiteralString.h */,
 				6BFAEA5218775CDE001CE3A9 /* ATLog.h */,
 				6BFAEA8718776205001CE3A9 /* NSArray+Helpers.h */,
 				6BFAEA8818776205001CE3A9 /* NSArray+Helpers.m */,
@@ -265,6 +268,7 @@
 			files = (
 				6BFAEA8418775F95001CE3A9 /* ATAssert.h in Headers */,
 				6BFAEA8618775F95001CE3A9 /* ATBaseDefines.h in Headers */,
+				6BB6D0FC18A4C0E200630FB3 /* ATLiteralString.h in Headers */,
 				6BFAEA5318775CDE001CE3A9 /* ATLog.h in Headers */,
 				6BFAEA6918775E36001CE3A9 /* DDAbstractDatabaseLogger.h in Headers */,
 				6BFAEA6B18775E36001CE3A9 /* DDASLLogger.h in Headers */,
