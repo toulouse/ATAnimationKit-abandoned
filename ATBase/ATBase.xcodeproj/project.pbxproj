@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		6B0AF7041877DFAA00124DA6 /* NSNumber+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */; };
 		6B0AF7051877DFAA00124DA6 /* NSNumber+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */; };
+		6BAFE97818A8086A00D14D7E /* NSObject+RecursiveDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAFE97618A8086A00D14D7E /* NSObject+RecursiveDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BAFE97918A8086A00D14D7E /* NSObject+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFE97718A8086A00D14D7E /* NSObject+RecursiveDescription.m */; };
+		6BAFE97D18A840E500D14D7E /* ATDescribable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAFE97C18A80CD000D14D7E /* ATDescribable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BAFE98318A84E5D00D14D7E /* NSArray+RecursiveDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAFE98118A84E5D00D14D7E /* NSArray+RecursiveDescription.h */; };
+		6BAFE98418A84E5D00D14D7E /* NSArray+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFE98218A84E5D00D14D7E /* NSArray+RecursiveDescription.m */; };
+		6BAFE98918A850E600D14D7E /* NSSet+RecursiveDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAFE98718A850E600D14D7E /* NSSet+RecursiveDescription.h */; };
+		6BAFE98A18A850E600D14D7E /* NSSet+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFE98818A850E600D14D7E /* NSSet+RecursiveDescription.m */; };
+		6BAFE98D18A85D6500D14D7E /* ATBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFAEA1A187754C9001CE3A9 /* ATBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BAFE99018A85E1A00D14D7E /* NSDictionary+RecursiveDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAFE98E18A85E1A00D14D7E /* NSDictionary+RecursiveDescription.h */; };
+		6BAFE99118A85E1A00D14D7E /* NSDictionary+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFE98F18A85E1A00D14D7E /* NSDictionary+RecursiveDescription.m */; };
 		6BB6D0FC18A4C0E200630FB3 /* ATLiteralString.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB6D0FA18A4C0E200630FB3 /* ATLiteralString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFAEA0E187754C9001CE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFAEA0D187754C9001CE3A9 /* Cocoa.framework */; };
 		6BFAEA18187754C9001CE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAEA16187754C9001CE3A9 /* InfoPlist.strings */; };
@@ -60,6 +70,15 @@
 /* Begin PBXFileReference section */
 		6B0AF7021877DFAA00124DA6 /* NSNumber+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Helpers.h"; sourceTree = "<group>"; };
 		6B0AF7031877DFAA00124DA6 /* NSNumber+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Helpers.m"; sourceTree = "<group>"; };
+		6BAFE97618A8086A00D14D7E /* NSObject+RecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RecursiveDescription.h"; sourceTree = "<group>"; };
+		6BAFE97718A8086A00D14D7E /* NSObject+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RecursiveDescription.m"; sourceTree = "<group>"; };
+		6BAFE97C18A80CD000D14D7E /* ATDescribable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATDescribable.h; sourceTree = "<group>"; };
+		6BAFE98118A84E5D00D14D7E /* NSArray+RecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RecursiveDescription.h"; sourceTree = "<group>"; };
+		6BAFE98218A84E5D00D14D7E /* NSArray+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RecursiveDescription.m"; sourceTree = "<group>"; };
+		6BAFE98718A850E600D14D7E /* NSSet+RecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+RecursiveDescription.h"; sourceTree = "<group>"; };
+		6BAFE98818A850E600D14D7E /* NSSet+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+RecursiveDescription.m"; sourceTree = "<group>"; };
+		6BAFE98E18A85E1A00D14D7E /* NSDictionary+RecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RecursiveDescription.h"; sourceTree = "<group>"; };
+		6BAFE98F18A85E1A00D14D7E /* NSDictionary+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RecursiveDescription.m"; sourceTree = "<group>"; };
 		6BB6D0FA18A4C0E200630FB3 /* ATLiteralString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLiteralString.h; sourceTree = "<group>"; };
 		6BFAEA0A187754C8001CE3A9 /* ATBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAEA0D187754C9001CE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -127,6 +146,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BAFE98018A84DF600D14D7E /* Recursive Description */ = {
+			isa = PBXGroup;
+			children = (
+				6BAFE97C18A80CD000D14D7E /* ATDescribable.h */,
+				6BAFE98118A84E5D00D14D7E /* NSArray+RecursiveDescription.h */,
+				6BAFE98218A84E5D00D14D7E /* NSArray+RecursiveDescription.m */,
+				6BAFE97618A8086A00D14D7E /* NSObject+RecursiveDescription.h */,
+				6BAFE97718A8086A00D14D7E /* NSObject+RecursiveDescription.m */,
+				6BAFE98718A850E600D14D7E /* NSSet+RecursiveDescription.h */,
+				6BAFE98818A850E600D14D7E /* NSSet+RecursiveDescription.m */,
+				6BAFE98E18A85E1A00D14D7E /* NSDictionary+RecursiveDescription.h */,
+				6BAFE98F18A85E1A00D14D7E /* NSDictionary+RecursiveDescription.m */,
+			);
+			name = "Recursive Description";
+			sourceTree = "<group>";
+		};
 		6BFAEA00187754C8001CE3A9 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +205,7 @@
 		6BFAEA13187754C9001CE3A9 /* ATBase */ = {
 			isa = PBXGroup;
 			children = (
+				6BAFE98018A84DF600D14D7E /* Recursive Description */,
 				6BFAEA14187754C9001CE3A9 /* Supporting Files */,
 				6BFAEA8118775F95001CE3A9 /* ATAssert.h */,
 				6BFAEA8218775F95001CE3A9 /* ATAssert.m */,
@@ -267,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFAEA8418775F95001CE3A9 /* ATAssert.h in Headers */,
+				6BAFE98D18A85D6500D14D7E /* ATBase.h in Headers */,
 				6BFAEA8618775F95001CE3A9 /* ATBaseDefines.h in Headers */,
+				6BAFE97D18A840E500D14D7E /* ATDescribable.h in Headers */,
 				6BB6D0FC18A4C0E200630FB3 /* ATLiteralString.h in Headers */,
 				6BFAEA5318775CDE001CE3A9 /* ATLog.h in Headers */,
 				6BFAEA6918775E36001CE3A9 /* DDAbstractDatabaseLogger.h in Headers */,
@@ -278,10 +316,14 @@
 				6BFAEA6F18775E36001CE3A9 /* DDLog+LOGV.h in Headers */,
 				6BFAEA7018775E36001CE3A9 /* DDLog.h in Headers */,
 				6BFAEA7818775E36001CE3A9 /* DDMultiFormatter.h in Headers */,
+				6BAFE99018A85E1A00D14D7E /* NSDictionary+RecursiveDescription.h in Headers */,
 				6BFAEA7218775E36001CE3A9 /* DDTTYLogger.h in Headers */,
 				6BFAEA8918776205001CE3A9 /* NSArray+Helpers.h in Headers */,
+				6BAFE98318A84E5D00D14D7E /* NSArray+RecursiveDescription.h in Headers */,
 				6B0AF7041877DFAA00124DA6 /* NSNumber+Helpers.h in Headers */,
+				6BAFE97818A8086A00D14D7E /* NSObject+RecursiveDescription.h in Headers */,
 				6BFAEA8D1877629D001CE3A9 /* NSObject+Reflection.h in Headers */,
+				6BAFE98918A850E600D14D7E /* NSSet+RecursiveDescription.h in Headers */,
 				6BFAEA9118776345001CE3A9 /* NSValue+Helpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,8 +434,12 @@
 				6BFAEA7918775E36001CE3A9 /* DDMultiFormatter.m in Sources */,
 				6BFAEA7318775E36001CE3A9 /* DDTTYLogger.m in Sources */,
 				6BFAEA8A18776205001CE3A9 /* NSArray+Helpers.m in Sources */,
+				6BAFE98418A84E5D00D14D7E /* NSArray+RecursiveDescription.m in Sources */,
+				6BAFE99118A85E1A00D14D7E /* NSDictionary+RecursiveDescription.m in Sources */,
 				6B0AF7051877DFAA00124DA6 /* NSNumber+Helpers.m in Sources */,
+				6BAFE97918A8086A00D14D7E /* NSObject+RecursiveDescription.m in Sources */,
 				6BFAEA8E1877629D001CE3A9 /* NSObject+Reflection.m in Sources */,
+				6BAFE98A18A850E600D14D7E /* NSSet+RecursiveDescription.m in Sources */,
 				6BFAEA9218776345001CE3A9 /* NSValue+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
